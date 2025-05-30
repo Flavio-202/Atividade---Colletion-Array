@@ -11,8 +11,11 @@ import leia from "readline-sync"
 let listadecores: Array <string> = new Array <string> ()
 
 for (let contador = 0; contador <= 5; contador ++){
-    let cor = leia.question ("Informe uma cor: ");
-    console.log ("A cor informada foi:" + cor);
+
+    listadecores.push (leia.question ("Informe uma cor: "));
 }
+
+console.log (listadecores)
+console.log (listadecores.sort ());
 
 
